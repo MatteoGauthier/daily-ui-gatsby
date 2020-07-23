@@ -1,0 +1,11 @@
+.search-input > input {
+  @apply block w-full px-4 py-2 leading-normal bg-white border border-gray-300 rounded-lg appearance-none
+}
+
+.search-input {
+  @apply px-24 mx-auto
+}
+.search-input::focus {
+  @apply outline-none shadow-outline;
+}
+
