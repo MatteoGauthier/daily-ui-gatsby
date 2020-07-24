@@ -12,11 +12,12 @@ exports.createPages = ({ graphql, actions }) => {
             id
             title
             updatedAt
-            screenshots {
-              url
-            }
             showcaseImage {
+              id
               url
+              handle
+              width
+              height
             }
           }
         }

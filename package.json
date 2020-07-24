@@ -18,8 +18,10 @@
     "gatsby-plugin-postcss": "^2.3.11",
     "gatsby-plugin-purgecss": "^5.0.0",
     "gatsby-plugin-sharp": "^2.6.21",
+    "gatsby-source-filesystem": "^2.3.22",
     "gatsby-source-graphql": "^2.6.2",
     "gatsby-transformer-sharp": "^2.5.11",
+    "graphcms-image": "^1.1.0-beta4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-search-input": "^0.11.3"

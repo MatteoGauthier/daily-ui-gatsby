@@ -1,13 +1,24 @@
 import React from "react"
+import GraphImg from "graphcms-image";
+import { Link } from "gatsby";
 
-const Card = ({ item: { title, day } }) => {
+const Card = ({ item: { title, day, showcaseImage }, dest }) => {
   return (
-    <div className="max-w-sm overflow-hidden rounded shadow-lg">
+    <Link
+      to={`/${dest}`}
+      className="max-w-sm overflow-hidden rounded shadow-lg"
+    >
       {/* <img
         className="w-full"
         src="/img/card-top.jpg"
         alt="Sunset in the mountains"
       /> */}
+      <GraphImg
+        image={showcaseImage[0]}
+        withWebp={true}
+        transforms={["quality=value:60"]}
+        maxWidth={800}
+      />
       <div className="px-6 py-4">
         <div className="mb-2 text-xl font-bold">
           #{day} - {title}
@@ -29,7 +40,7 @@ const Card = ({ item: { title, day } }) => {
           #winter
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
 

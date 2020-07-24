@@ -11,6 +11,18 @@ export default function Home() {
           id
           day
           title
+          screenshots {
+            id
+            url
+            handle
+          }
+          showcaseImage {
+            id
+            url
+            handle
+            width
+            height
+          }
         }
       }
     }

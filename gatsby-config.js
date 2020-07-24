@@ -21,6 +21,13 @@ module.exports = {
       options: { tailwind: true },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: "gatsby-source-graphql",
       options: {
         // The top level query type, can be anything you want!
