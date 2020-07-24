@@ -16,6 +16,8 @@ export default function Home() {
             url
             handle
           }
+          plateform
+          tags
           showcaseImage {
             id
             url
@@ -29,7 +31,7 @@ export default function Home() {
   `)
   return (
     <Layout>
-      <DashBoard searches={data.gcms.dayDesigns}/>
+      <DashBoard searches={data.gcms.dayDesigns} />
 
       <pre>{JSON.stringify(data, null, 4)}</pre>
     </Layout>

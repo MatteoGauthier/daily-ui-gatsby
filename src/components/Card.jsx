@@ -1,8 +1,12 @@
 import React from "react"
-import GraphImg from "graphcms-image";
-import { Link } from "gatsby";
+import GraphImg from "graphcms-image"
+import { Link } from "gatsby"
 
-const Card = ({ item: { title, day, showcaseImage }, dest }) => {
+const Card = ({
+  item: { title, day, showcaseImage, tags, plateform },
+  dest,
+}) => {
+
   return (
     <Link
       to={`/${dest}`}
@@ -29,16 +33,27 @@ const Card = ({ item: { title, day, showcaseImage }, dest }) => {
           nihil.
         </p>
       </div>
-      <div className="px-6 py-4">
-        <span className="inline-block px-3 py-1 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">
-          #photography
-        </span>
-        <span className="inline-block px-3 py-1 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">
-          #travel
-        </span>
-        <span className="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">
-          #winter
-        </span>
+      <div className="px-6 py-4 space-x-2">
+        {tags.map((tag, index) => {
+          return (
+            <span
+              key={index}
+              className="inline-block px-3 py-1 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full"
+            >
+              #{tag}
+            </span>
+          )
+        })}
+        {plateform.map((item, index) => {
+          return (
+            <span
+              key={index}
+              className="inline-block px-3 py-1 text-sm font-semibold text-blue-700 bg-blue-200 rounded-full"
+            >
+              #{item}
+            </span>
+          )
+        })}
       </div>
     </Link>
   )

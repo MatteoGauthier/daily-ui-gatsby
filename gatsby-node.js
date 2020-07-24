@@ -12,6 +12,7 @@ exports.createPages = ({ graphql, actions }) => {
             id
             title
             updatedAt
+            
             showcaseImage {
               id
               url

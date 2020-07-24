@@ -20,7 +20,10 @@ export default class Dashboard extends Component {
 
     return (
       <div>
-        <SearchInput className="search-input" onChange={this.searchUpdated} />
+        <SearchInput
+          className="search-input"
+          onChange={this.searchUpdated}
+        />
         <div className="flex space-x-4 space-y-2">
           {filteredItems.map(item => {
             console.log(item)
