@@ -20,13 +20,13 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: { tailwind: true },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     {
       resolve: "gatsby-source-graphql",
       options: {

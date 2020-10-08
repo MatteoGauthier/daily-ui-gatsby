@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import SearchInput, { createFilter } from "react-search-input"
 import Card from "./Card"
 
-const KEYS_TO_FILTERS = ["day", "title"]
+const KEYS_TO_FILTERS = ["day", "title", "tags"]
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -35,6 +35,6 @@ export default class Dashboard extends Component {
   }
 
   searchUpdated(term) {
-    this.setState({ searchTerm: term })
+    this.setState({ searchTerm: term.replace("#", "") })
   }
 }
