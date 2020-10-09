@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import SearchInput, { createFilter } from "react-search-input"
 import Card from "./Card"
 
-const KEYS_TO_FILTERS = ["day", "title", "tags"]
+const KEYS_TO_FILTERS = ["day", "title", "tags", "plateforms"]
 
 export default class Dashboard extends Component {
   constructor(props) {

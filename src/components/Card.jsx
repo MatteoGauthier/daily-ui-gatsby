@@ -3,7 +3,7 @@ import GraphImg from "graphcms-image"
 import { Link } from "gatsby"
 
 const Card = ({
-  item: { title, day, showcaseImage, tags, plateform },
+  item: { title, day, showcaseImage, tags, plateforms },
   dest,
 }) => {
 
@@ -44,7 +44,7 @@ const Card = ({
             </span>
           )
         })}
-        {plateform.map((item, index) => {
+        {plateforms.map((item, index) => {
           return (
             <span
               key={index}

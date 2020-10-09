@@ -16,7 +16,7 @@ export default function Home() {
             url
             handle
           }
-          plateform
+          plateforms
           tags
           showcaseImage {
             id
